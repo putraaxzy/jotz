@@ -161,7 +161,7 @@ export default function SessionPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="min-h-screen flex items-center justify-center">
         <p className="text-gray-700">Memuat sesi...</p>
       </div>
     );
@@ -169,7 +169,7 @@ export default function SessionPage() {
 
   if (error && error.includes("Session not found or expired")) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4">
         <p className="text-red-500 text-lg mb-4">{error}</p>
         <Link href="/" className="text-indigo-600 hover:underline">
           Kembali ke Beranda
@@ -179,8 +179,8 @@ export default function SessionPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-6 border border-gray-200">
+    <div className="min-h-screen p-4">
+      <div className="mx-auto rounded-lg shadow-xl p-6 border border-gray-200">
         <div className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
           <h1 className="text-3xl font-bold text-gray-900 flex items-center space-x-2">
             <span>Sesi: {sessionName}</span>{" "}
