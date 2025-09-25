@@ -36,13 +36,15 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4 flex items-center justify-center space-x-2">
-          <span>Jotz</span> <span className="text-indigo-600">👻</span>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="p-8 rounded-lg shadow-md w-full">
+        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4 flex items-center justify-center">
+          <span>Jotz</span>
+          {""}
+          <span className="text-indigo-600">👻</span>
         </h1>
         <p className="text-center text-gray-600 mb-8 text-lg">
-          Catatan & Berkas Ephemeral
+          <span>Catatan & Berkas Ephemeral</span>
         </p>
 
         <form onSubmit={handleCreateOrJoinSession} className="space-y-6">
