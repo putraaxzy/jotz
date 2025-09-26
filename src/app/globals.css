@@ -95,9 +95,9 @@ body {
 
 /* Force black text in light theme */
 .text-force-black {
-  color: #000000 !important;
+  color: var(--foreground) !important;
 }
 
 [data-theme="dark"] .text-force-black {
-  color: #ffffff !important;
+  color: var(--foreground) !important;
 }
